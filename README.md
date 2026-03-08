@@ -27,4 +27,4 @@ Database: DynamoDB
 
 ## MVP Demo
 
-(Add your deployed website link here)
+http://krishi-saathi-demo.s3-website.eu-north-1.amazonaws.com/
