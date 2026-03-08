@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Krishi Saathi</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="main-container">
+<div id="offlineBanner">
+You are offline. Some features may not work.
+</div>
+<div class="hero">
+
+    <div class="navbar">
+
+        <div class="logo">
+            🌾 Krishi Saathi
+        </div>
+
+       
+
+        <button class="contact">Get Help</button>
+        <button id="accessBtn">⚙ Accessibility</button>
+        
+        <select id="languageSelect">
+<option value="en">English</option>
+<option value="hi">हिंदी</option>
+<option value="bn">বাংলা</option>
+<option value="ta">தமிழ்</option>
+</select>
+
+    </div>
+
+
+    <div class="hero-content">
+
+        <h3>AI Assistant for Farmers</h3>
+
+        <h1>SMART FARM<br>DECISION SUPPORT</h1>
+
+        <p>
+        Ask questions about government schemes, market prices, and farming advice.
+        Krishi Saathi helps you understand eligibility and guides your next steps.
+        </p>
+
+        <button class="cta" onclick="scrollToAssistant()">Ask the Assistant</button>
+
+    </div>
+    <div class="quick-actions">
+
+<button onclick="quickAsk('PM Kisan eligibility')">
+Check Scheme Eligibility
+</button>
+
+<button onclick="quickAsk('wheat price')">
+Market Prices
+</button>
+
+<button onclick="quickAsk('required documents')">
+Required Documents
+</button>
+
+<button onclick="quickAsk('agent asking money')">
+Report Scam
+</button>
+
+</div>
+    
+    
+
+</div>
+<div class="access-panel" id="accessPanel">
+
+<h3>Accessibility Options</h3>
+
+<button onclick="changeFont(1)">A+</button>
+<button onclick="changeFont(-1)">A-</button>
+
+<button onclick="toggleContrast()">High Contrast</button>
+
+<button onclick="toggleVoice()">Voice Mode</button>
+
+</div>
+<section class="assistant">
+
+<h2>Ask Krishi Saathi</h2>
+
+<p>Your AI assistant for schemes, market advice and farming guidance.</p>
+
+<div class="assistant-box">
+
+<input type="text" id="question"
+placeholder="Ask something like: Kya mujhe PM Kisan milega?" />
+
+<button id="askBtn">Ask</button>
+
+<button id="voiceBtn">🎤 Voice</button>
+
+</div>
+
+<div class="chat-box" id="chatBox">
+
+<div class="bot-message">
+Hello 👋 I am Krishi Saathi.  
+Ask me about schemes, market prices, or farming advice.
+</div>
+<section class="community">
+
+<h2>Community Insights</h2>
+
+<div class="community-cards">
+
+<div class="card">
+<h3>Success Rate</h3>
+<p>40% farmers successfully applied</p>
+</div>
+
+<div class="card">
+<h3>Common Issue</h3>
+<p>Document verification delays</p>
+</div>
+
+<div class="card">
+<h3>Average Processing</h3>
+<p>2–4 weeks approval time</p>
+</div>
+
+</div>
+
+</section>
+
+</div>
+<section class="farmer-tools">
+
+<h2>Tips & New Tools for Farmers</h2>
+
+<p>Learn about modern farming practices and tools that can improve productivity.</p>
+
+<div class="tools-grid">
+
+<div class="tool-card">
+<h3>🎓 Government Training Programs</h3>
+<p>Learn modern farming practices through government programs like PMKVY and Krishi Vigyan Kendra workshops.</p>
+<button class="tool-btn">Explore Programs</button>
+</div>
+
+<div class="tool-card">
+<h3>🚜 Subsidized Equipment</h3>
+<p>Farmers can receive subsidies on tractors, irrigation systems, and machinery through government schemes.</p>
+<button class="tool-btn">Check Subsidies</button>
+</div>
+
+<div class="tool-card">
+<h3>🌦 Weather-Based Farming Advice</h3>
+<p>Use weather forecasts to decide irrigation, fertilizer use, and harvest timing.</p>
+<button class="tool-btn">View Weather Advice</button>
+</div>
+
+<div class="tool-card">
+<h3>🤖 Agri-Technology Tools</h3>
+<p>Discover drones, soil sensors, and AI tools that help increase productivity and reduce costs.</p>
+<button class="tool-btn">Discover Tools</button>
+</div>
+
+<div class="tool-card">
+<h3>🌱 Soil Testing</h3>
+<p>Testing soil nutrients before planting improves crop yield and fertilizer efficiency.</p>
+</div>
+
+<div class="tool-card">
+<h3>📱 Farming Apps</h3>
+<p>Mobile apps provide real-time crop advice, pest alerts, and mandi prices.</p>
+</div>
+
+</div>
+
+</section>
+<div class="feedback">
+
+<p>Did this advice help you?</p>
+
+<button id="yesBtn">👍 Yes</button>
+<button id="noBtn">👎 No</button>
+
+</div>
+
+</section>
+</div>   
+<footer class="footer">
+
+<div class="footer-content">
+
+<h3>Krishi Saathi 🌾</h3>
+
+<p>
+AI-powered assistant helping farmers access schemes, market insights, and modern farming knowledge.
+</p>
+
+<div class="footer-links">
+<a href="#">Schemes</a>
+<a href="#">Market</a>
+<a href="#">Resources</a>
+<a href="#">About</a>
+</div>
+
+<p class="copyright">
+© 2026 Krishi Saathi | Built for Community Empowerment
+</p>
+
+</div>
+
+</footer>
+<script src="script.js"></script>
+
+</body>
+</html>
